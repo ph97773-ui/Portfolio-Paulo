@@ -16,9 +16,9 @@ O site possui as seções Perfil, Projetos, Habilidades e Contato. O menu no top
 
 ## Link do site publicado
 
-Depois de ativar o GitHub Pages, inserir aqui o endereço:
+O portfólio está publicado em:
 
-`https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`
+`https://ph97773-ui.github.io/Portfolio-Paulo/`
 
 ## Funcionamento do projeto
 
