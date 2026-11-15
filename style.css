@@ -1,0 +1,71 @@
+/* Estilo simples e personalizado do meu portfólio. */
+:root {
+  --azul-escuro: #1f2937;
+  --azul: #2563eb;
+  --fundo-claro: #f5f7fa;
+  --texto: #263238;
+  --cinza: #667085;
+}
+
+html { scroll-behavior: smooth; }
+body { color: var(--texto); padding-top: 65px; }
+
+/* Menu feito com as classes do Bootstrap e uma cor própria. */
+.navbar { background: var(--azul-escuro); }
+.navbar-brand { letter-spacing: .01em; }
+.nav-link { color: #e5e7eb !important; margin-left: .5rem; }
+.nav-link:hover { color: white !important; }
+
+.hero {
+  min-height: 590px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background: var(--azul-escuro);
+}
+
+.eyebrow { margin-bottom: .6rem; color: #2563eb; font-size: .78rem; font-weight: 700; letter-spacing: .12em; }
+.hero .eyebrow { color: #93c5fd; }
+.hero h1 { max-width: 700px; font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 700; line-height: 1.08; }
+.hero h1 span { color: #93c5fd; }
+.hero .lead { max-width: 620px; color: #d1d5db; }
+
+.perfil-card { padding: 1.8rem; border: 1px solid #d1d5db; border-radius: .75rem; background: white; color: var(--texto); text-align: center; }
+.avatar { width: 82px; height: 82px; margin: 0 auto 1rem; display: grid; place-items: center; border-radius: 50%; background: #dbeafe; color: #1d4ed8; font-size: 1.7rem; font-weight: 700; }
+.perfil-card h2 { font-size: 1.2rem; }
+.perfil-card p { color: var(--cinza); }
+.mini-info { margin-top: .65rem; color: #475467; text-align: left; font-size: .93rem; }
+.mini-info span { display: inline-block; width: 27px; }
+
+.section-padding { padding: 4.5rem 0; }
+.section-heading { max-width: 650px; margin-bottom: 2rem; }
+.section-heading h2, section h2 { font-weight: 700; }
+.section-heading p, .text-secondary { color: var(--cinza) !important; }
+
+.project-card { padding: 1.5rem; border: 1px solid #dfe3e8; border-radius: .75rem; background: white; transition: transform .2s ease; }
+.project-card:hover { transform: translateY(-4px); }
+.project-card h3 { margin-top: 1rem; font-size: 1.15rem; font-weight: 700; }
+.project-card p { min-height: 72px; color: var(--cinza); }
+.project-icon { width: 54px; height: 54px; display: grid; place-items: center; border-radius: .6rem; font-size: 1.5rem; }
+.icon-purple { background: #eee9fe; }
+.icon-blue { background: #e0edff; }
+.icon-orange { background: #fff0d6; }
+
+.skill-line { margin-bottom: 1.2rem; }
+.skill-line > div:first-child { display: flex; justify-content: space-between; margin-bottom: .35rem; font-weight: 600; }
+.skill-line strong { color: var(--azul); }
+.progress { height: 8px; background: #e5e7eb; }
+.progress-bar { background: var(--azul); }
+
+.highlight-section { background: #eef4ff; }
+.mensagem { color: #1d4ed8; font-weight: 700; }
+.contact-section { background: var(--fundo-claro); }
+.contact-item a { color: #344054; text-decoration: none; }
+.contact-item a:hover { color: var(--azul); }
+.contact-form { padding: 1.5rem; border: 1px solid #dfe3e8; border-radius: .75rem; background: white; }
+.footer { padding: 1.5rem 1rem; background: var(--azul-escuro); color: #d1d5db; }
+
+@media (max-width: 991px) {
+  .hero { min-height: auto; padding: 4rem 0; }
+  .nav-link { margin-left: 0; }
+}
